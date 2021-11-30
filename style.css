@@ -1,0 +1,98 @@
+body {
+
+	background: #c31432;  /* Für alte Browser die an den Effekten scheitern*/ 
+	background: -webkit-linear-gradient(to right, #240b36, #c31432);  
+	background: linear-gradient(to right, #240b36, #c31432); 
+	
+    color: white;
+    margin: 0;
+    font-family: rubik;
+}
+
+/*Pokedex Vorne und Hinten */
+
+.container {
+	
+    padding: 40px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 54px;
+}
+
+#pokedex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    padding-inline-start: 0;
+}
+
+.card {
+	border-radius: 25px;
+    list-style: none;
+    padding: 40px;
+    background-color: #f4f4f4;
+    color: #222;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  
+  
+}
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+
+
+
+.card2 {
+  
+    -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+    
+
+
+	
+}
+
+
+
+
+/*CSS für den Text */
+
+.card-title {
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    font-size: 32px;
+    font-weight: normal;
+    
+	
+    
+}
+.card-subtitle {
+    margin-top: 5px;
+    color: #666;
+    font-weight: lighter;
+	
+    
+}
+
+
+
+.card-image {
+    height: 180px;
+}
+
+
+
+.card-back {
+    
+  color: black;
+  transform: rotateY(180deg);
+}
+
